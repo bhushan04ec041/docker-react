@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker 
+
+before_install:
+  - docker build -t bhushan04ec041/docker-react -f dockerfile.dev 
+
+
+script:
+  - docker run bhushan04ec041/docker-react npm run test -- -- coverage 
+  
