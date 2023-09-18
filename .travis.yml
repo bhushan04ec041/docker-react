@@ -7,5 +7,5 @@ before_install:
 
 
 script:
-  - docker run bhushan04ec041/docker-react npm run test -- -- coverage 
+  - docker run bhushan04ec041/docker-react npm run test -- --coverage 
   
